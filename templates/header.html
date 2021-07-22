@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' href='../static/styles/style.css'>
+    <link rel='stylesheet' href='../static/styles/header.css'>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"
+    >
+    </script>
+    <script src="../static/js/hamburger.js"></script>
+    <title>Eventer</title>
+</head>
+<header>
+    <div class="center-container">
+        <svg id='hamburger' width="100" height="100" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.125 12.6666H11.875C11.438 12.6666 11.0833 12.312 11.0833 11.875C11.0833 11.438 11.438 11.0833 11.875 11.0833H26.125C26.562 11.0833 26.9167 11.438 26.9167 11.875C26.9167 12.312 26.562 12.6666 26.125 12.6666Z" fill="white"/>
+            <path d="M26.125 19.7917H11.875C11.438 19.7917 11.0833 19.437 11.0833 19C11.0833 18.563 11.438 18.2083 11.875 18.2083H26.125C26.562 18.2083 26.9167 18.563 26.9167 19C26.9167 19.437 26.562 19.7917 26.125 19.7917Z" fill="white"/>
+            <path d="M26.125 26.9167H11.875C11.438 26.9167 11.0833 26.562 11.0833 26.125C11.0833 25.688 11.438 25.3333 11.875 25.3333H26.125C26.562 25.3333 26.9167 25.688 26.9167 26.125C26.9167 26.562 26.562 26.9167 26.125 26.9167Z" fill="white"/>
+        </svg>
+        <div id="dropdown-container">
+            <ul>
+                <li>Hello</li>
+            </ul>
+        </div>
+        <p class='white'>{{ session['page'] }}</p>
+    </div>
+</header>

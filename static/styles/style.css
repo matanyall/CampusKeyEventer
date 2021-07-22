@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* ----------- iPhone X ----------- */
+/* Taken from https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    .center-container {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+* {
+   font-family: 'Roboto', sans-serif;
+}
+
+
+.white {
+    color: white;
+}
