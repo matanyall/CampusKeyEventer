@@ -1,6 +1,8 @@
 .vscode/
 *.txt
+*.html
 *.svg
 __pycache__/
 *.json
 *.json_old
+APIkey_DO_NOT_UPLOAD.txt
