@@ -1,1 +1,4 @@
 .vscode/
+*.txt
+*.svg
+__pycache__/

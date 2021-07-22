@@ -1,0 +1,7 @@
+import main
+
+main.make_student("firstname lastname", "12345", "firstname@corn.com")
+
+print(main.student_list)
+
+main.register_for_event("Matanya Loewenthal", "115353015", "matanya@corn.com", "CampusKeyHackathon")
