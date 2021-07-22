@@ -1,0 +1,9 @@
+{% extends "header.html" %}
+
+{% block headtag %}
+<link rel='stylesheet' href='../static/styles/events.css'>
+{% endblock %}
+
+{% block content %}
+{{session['events']}}
+{% endblock %}
