@@ -10,3 +10,4 @@ app.secret_key = 'nelnet'
 def index():
     session['page'] = 'Welcome'
     return render_template(str(Path("index.html")))
+
