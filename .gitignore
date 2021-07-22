@@ -1,0 +1,6 @@
+.vscode/
+*.txt
+*.svg
+__pycache__/
+*.json
+*.json_old
