@@ -10,18 +10,18 @@
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
 
-    .center-container {
-        display: flex;
-        justify-content: center;
-    }
+    
 
 }
-
 
 * {
    font-family: 'Roboto', sans-serif;
 }
 
+.center-container {
+    display: flex;
+    justify-content: center;
+}
 
 .white {
     color: white;
