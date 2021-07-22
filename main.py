@@ -1,5 +1,7 @@
 import os
 import pyqrcode # pip install pyqrcode
+import send_email
+# pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 student_list = {}
 
@@ -24,16 +26,16 @@ def QR_gen(Student_ID, Event_ID):
     qr_code = pyqrcode.create(qr_code_data)
     qr_code_svg = qr_code.svg(qr_code_name, scale=8)
     register(registration, qr_code_data)
+    send_ticket(student_list[Student_ID], qr_code_name, Event_ID)
     return qr_code_svg
 
 # TODO
 # method that takes QR code and email address and sends ticket email. 
 # also return registration object with info
 
-def send_ticket(QR_image, email):
-    # use aAPI to send ticket to registrant
-    registration_obj = "" # object containing name and ID (for now)
-    return registration_obj
+def send_ticket(student_dict, qr_code_image, Event_ID):
+    # use Gmail API to send ticket to registrant
+    send_email.send_email_with_ticket(student_dict, qr_code_image, Event_ID)
 
 # TODO
 # method that makes string html map from gmplot with heatmap of events
@@ -51,10 +53,6 @@ def register(registration_list, qr_code_data):
     f = open(sheet_name, "a")
     f.write(qr_code_data + "; " + student["Name"] + "; " + student["Email"] + "\n")
     f.close()
-
-
-
-    # add registrant to google sheet
     return None
 
 # TODO
