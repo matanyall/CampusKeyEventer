@@ -8,5 +8,5 @@ app.secret_key = 'nelnet'
 
 @app.route("/")
 def index():
-    session['page'] = 'Map'
+    session['page'] = 'Welcome'
     return render_template(str(Path("index.html")))

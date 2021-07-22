@@ -37,6 +37,7 @@ header {
 #school-logo {
     width: 300px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 li {
@@ -47,10 +48,6 @@ ul {
     list-style: none;
 }
 
-.dropdown-svg {
-    width: 80px;
-}
-
 .dropdown-text {
     display: inline;
 }
@@ -59,10 +56,7 @@ ul {
     display: block;
     padding-left: 10px;
     padding-top: 10px;
-}
-
-.dropdown-item:first-of-type {
-    padding-top: 20px;
+    background-color: #FFFFFF;
 }
 
 .dropdown-item:hover {

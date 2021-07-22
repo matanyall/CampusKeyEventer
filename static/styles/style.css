@@ -26,3 +26,11 @@
 .white {
     color: white;
 }
+
+.svg-icon {
+    width: 80px;
+}
+
+.center-text {
+    text-align: center;
+}
