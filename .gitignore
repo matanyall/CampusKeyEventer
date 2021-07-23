@@ -1,0 +1,9 @@
+.vscode/
+*.txt
+*secret.html
+*qr.svg
+__pycache__/
+*.json
+*.json_old
+APIkey_DO_NOT_UPLOAD.txt
+*.pyc
