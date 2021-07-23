@@ -25,4 +25,8 @@ $(document).ready( () => {
     $('#event-span').on('click', event => {
         window.location.replace('/events');
     });
+
+    $('#map-span').on('click', event => {
+        window.location.replace('/map');
+    });
 });
