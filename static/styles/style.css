@@ -34,3 +34,17 @@
 .center-text {
     text-align: center;
 }
+
+.svg-text {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.main-text {
+    font-size: 23px;
+}
+
+.sub-text {
+    margin-top: -15px;
+    color: #505050;
+}
