@@ -26,3 +26,9 @@ def events():
 def cornhusking():
     session['page'] = 'Cornhusking'
     return render_template(str(Path('cornhusking.html')))
+
+@app.route('/map')
+def map():
+    session['page'] = 'Map'
+    return render_template(str(Path('map.html')))
+
