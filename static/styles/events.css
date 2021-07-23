@@ -60,7 +60,7 @@ a {
     color: #BF4545;
 }
 
-#register-btn {
+#register-btn, #view-registration-btn {
     cursor: pointer;
     border-radius:8px;
     width: 200px;
@@ -72,10 +72,15 @@ a {
     font-size: 24px;
 }
 
-#register-btn:hover {
+#register-btn:hover, #view-registration-btn:hover {
     background-color: #CF6262;
 }
 
 #registered-page {
     display: none;
+}
+
+h2 {
+    font-weight: 100px;
+    color: #505050;
 }

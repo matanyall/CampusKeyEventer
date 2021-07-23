@@ -3,7 +3,7 @@ from pathlib import Path
 debug=True # set this to false later;
 app = Flask(__name__)
 from models import Event
-from main import *
+# from main import *
 
 # Most safe practice amirite...
 secret_key_file = 'flask_key.txt'
