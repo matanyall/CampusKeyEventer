@@ -1,6 +1,6 @@
 .vscode/
 *.txt
-*.html
+*secret.html
 *.svg
 __pycache__/
 *.json
