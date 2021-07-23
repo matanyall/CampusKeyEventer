@@ -1,6 +1,7 @@
 import os
 import pyqrcode # pip install pyqrcode
 import send_email
+import heat_map
 # pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 student_list = {}
@@ -41,8 +42,7 @@ def send_ticket(student_dict, qr_code_image, Event_ID):
 # method that makes string html map from gmplot with heatmap of events
 
 def heatmap_gen():
-    heatmap_html_string = ""
-    return heatmap_html_string
+    heat_map.make_heat_map()
 
 # TODO
 # method that takes registration object and google sheet and adds to google sheet
