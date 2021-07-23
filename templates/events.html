@@ -2,8 +2,40 @@
 
 {% block headtag %}
 <link rel='stylesheet' href='../static/styles/events.css'>
+<script text="text/javascript" src="../static/js/events.js"></script>
 {% endblock %}
 
 {% block content %}
-{{session['events']}}
+<header id="events">
+    <span id='suggested-tab' class='event-tab'>
+        For You
+    </span>
+    <span id='all-tab' class='event-tab'>
+        All Events
+    </span>
+    <span id='my-tab' class='event-tab'>
+        My Events
+    </span>
+</header>
+<div id='suggested-events' style="margin-top: 250px;">
+    <div class="center-container">
+        <img class='svg cornhusking' width=840 height=494 src='../static/assets/Cornhusk.svg' alt='Cornhusking Event'>
+    </div>
+    <div class="center-container">
+        <img class='svg hackathon' width=840 height=494 src='../static/assets/Hackathon.svg' alt='Hackathon Event'>
+    </div>
+</div>
+<div id='all-events' style='margin-top: 250px;' class='center-container'>
+    <div class="center-container">
+        <img class='svg cornhusking' width=840 height=494 src='../static/assets/Cornhusk.svg' alt='Cornhusking Event'>
+    </div>
+    <div class="center-container">
+        <img class='svg hackathon' width=840 height=494 src='../static/assets/Hackathon.svg' alt='Hackathon Event'>
+    </div>
+    <div class="center-container">
+        <img class='svg ice-cream' width=840 height=494 src='../static/assets/Free Ice Cream.svg' alt='Free Ice Cream Event'>
+    </div>
+</div>
+<div id='my-events' style='margin-top: 250px;' class='center-container'>
+</div>
 {% endblock %}

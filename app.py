@@ -3,7 +3,7 @@ from pathlib import Path
 debug=True # set this to false later;
 app = Flask(__name__)
 from models import Event
-import json
+from main import *
 
 # Most safe practice amirite...
 secret_key_file = 'flask_key.txt'
@@ -19,9 +19,10 @@ def index():
 def events():
     session['page'] = 'Events'
     # Get all events
-    path = str(Path("./events.json"))
-    events = None
-    with open(path) as json_file:
-        events = json.load(json_file)
-    session['events'] = events['events']
     return render_template(str(Path('events.html')))
+
+
+@app.route('/events/cornhusking')
+def cornhusking():
+    session['page'] = 'Cornhusking'
+    return render_template(str(Path('cornhusking.html')))
