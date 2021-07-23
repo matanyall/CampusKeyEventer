@@ -18,7 +18,7 @@ def make_student(Name, ID, Email):
     student_list[ID] = student
 
 # TODO 
-# method that takes student ID, Event ID, and Registration ID and returns unique QR code
+# method that takes student ID, Event ID, and Registration ID and returns unique QR code file name
 
 def QR_gen(Student_ID, Event_ID):
     registration = [Student_ID, Event_ID]
@@ -28,7 +28,17 @@ def QR_gen(Student_ID, Event_ID):
     qr_code_svg = qr_code.svg(qr_code_name, scale=8)
     register(registration, qr_code_data)
     send_ticket(student_list[Student_ID], qr_code_name, Event_ID)
-    return qr_code_svg
+    return qr_code_name
+
+def QR_gen_code_only(Student_ID, Event_ID):
+    registration = [Student_ID, Event_ID]
+    qr_code_data = "R" + registration[0] + registration[1] 
+    qr_code_name = qr_code_data + ".svg"
+    qr_code = pyqrcode.create(qr_code_data)
+    qr_code_svg = qr_code.svg(qr_code_name, scale=8)
+    register(registration, qr_code_data)
+    return qr_code_name
+
 
 # TODO
 # method that takes QR code and email address and sends ticket email. 
@@ -62,3 +72,9 @@ def register(registration_list, qr_code_data):
 def register_for_event(Name, ID, Email, Event_ID):
     make_student(Name, ID, Email)
     qr_code_svg = QR_gen(ID, Event_ID)
+
+def register_for_event_qr_only(Name, ID, Email, Event_ID):
+    make_student(Name, ID, Email)
+    qr_code_svg_only_name = QR_gen_code_only(ID, Event_ID)
+    # print(qr_code_svg_only_name)
+    return qr_code_svg_only_name
