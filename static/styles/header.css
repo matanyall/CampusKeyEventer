@@ -16,7 +16,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     top: 10px;
 }
 
-header {
+#navbar {
     top: 0;
     left: 0;
     width: 100%;
@@ -58,6 +58,7 @@ ul {
     padding-right: 10px;
     padding-top: 10px;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .dropdown-item:hover {
@@ -66,4 +67,8 @@ ul {
 
 .dropdown-item:last-of-type {
     padding-bottom: 20px;
+}
+
+.svg-icon {
+    cursor:pointer;
 }

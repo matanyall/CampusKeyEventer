@@ -18,4 +18,11 @@ $(document).ready( () => {
     //         $(event.target).parent().css('background-color', '#FFF1F1');
     //     });
     // });
+    $('#CampusKey-span').on('click', event => {
+        window.location.replace('/');
+    });
+    
+    $('#event-span').on('click', event => {
+        window.location.replace('/events');
+    });
 });
