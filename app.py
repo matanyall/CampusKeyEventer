@@ -32,3 +32,8 @@ def map():
     session['page'] = 'Map'
     return render_template(str(Path('map.html')))
 
+@app.route('/events/cornhusking/qr')
+def qr():
+    session['page'] = 'QR Code'
+    return render_template(str(Path('qr.html')))
+

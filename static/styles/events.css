@@ -41,21 +41,6 @@
 .title {
     font-weight: 500;
 }
-
-.svg-text {
-    margin-left: 20px;
-    display: inline-block;
-}
-
-.main-text {
-    font-size: 23px;
-}
-
-.sub-text {
-    margin-top: -15px;
-    color: #505050;
-}
-
 a {
     color: #BF4545;
 }
