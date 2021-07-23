@@ -23,7 +23,7 @@ def make_student(Name, ID, Email):
 def QR_gen(Student_ID, Event_ID):
     registration = [Student_ID, Event_ID]
     qr_code_data = "R" + registration[0] + registration[1] 
-    qr_code_name = qr_code_data + ".svg"
+    qr_code_name = qr_code_data + "qr.svg"
     qr_code = pyqrcode.create(qr_code_data)
     qr_code_svg = qr_code.svg(qr_code_name, scale=8)
     register(registration, qr_code_data)
@@ -33,7 +33,7 @@ def QR_gen(Student_ID, Event_ID):
 def QR_gen_code_only(Student_ID, Event_ID):
     registration = [Student_ID, Event_ID]
     qr_code_data = "R" + registration[0] + registration[1] 
-    qr_code_name = qr_code_data + ".svg"
+    qr_code_name = qr_code_data + "qr.svg"
     qr_code = pyqrcode.create(qr_code_data)
     qr_code_svg = qr_code.svg(qr_code_name, scale=8)
     register(registration, qr_code_data)
