@@ -28,4 +28,8 @@ $(document).ready( () => {
         $('#register-page').css('display', 'none');
         $('#registered-page').css('display', 'flex');
     });
+
+    $('#view-registration-btn').on('click', event => {
+        window.location.replace('/events/cornhusking/qr');
+    })
 });
