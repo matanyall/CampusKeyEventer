@@ -1,0 +1,11 @@
+#nebraska_logo {
+    width: 500px;
+}
+
+h1:first-of-type {
+    padding-bottom: 20px;
+}
+
+h1:last-of-type {
+    padding-top: 20px;
+}
