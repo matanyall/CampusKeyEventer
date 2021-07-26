@@ -6,7 +6,7 @@ from models import Event
 # from main import *
 
 # Most safe practice amirite...
-secret_key_file = 'flask_key.txt'
+secret_key_file = '../keys/flask_key.txt'
 with open(secret_key_file) as f:
     app.secret_key = f.read()
 

@@ -1,7 +1,7 @@
 import os
 import pyqrcode # pip install pyqrcode
-import send_email
-import heat_map
+from . import send_email
+from . import heat_map
 # pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 student_list = {}

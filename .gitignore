@@ -7,3 +7,5 @@ __pycache__/
 *.json_old
 APIkey_DO_NOT_UPLOAD.txt
 *.pyc
+**keys/
+/keys/map_secret.html
