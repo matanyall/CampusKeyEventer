@@ -2,7 +2,7 @@ import gmplot
 
 
 def make_heat_map():
-    APIKey_Addr = "APIkey_DO_NOT_UPLOAD.txt"
+    APIKey_Addr = "keys/APIkey_DO_NOT_UPLOAD.txt"
     f = open(APIKey_Addr)
     apikey = f.read()
     f.close()
@@ -93,4 +93,4 @@ def make_heat_map():
         gradient=[(0, 0, 255, 0), (0, 255, 0, 0.9), (255, 0, 0, 1)]
     )
 
-    gmap.draw('map_secret.html')
+    gmap.draw('generated_files/map_secret.html')

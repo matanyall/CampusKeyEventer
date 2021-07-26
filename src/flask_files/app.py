@@ -2,11 +2,14 @@ from flask import Flask, request, render_template, session
 from pathlib import Path
 debug=True # set this to false later;
 app = Flask(__name__)
-from models import Event
+from .models import Event
 # from main import *
 
+def test_app():
+    return app
+
 # Most safe practice amirite...
-secret_key_file = 'flask_key.txt'
+secret_key_file = 'keys/flask_key.txt'
 with open(secret_key_file) as f:
     app.secret_key = f.read()
 
@@ -36,4 +39,3 @@ def map():
 def qr():
     session['page'] = 'QR Code'
     return render_template(str(Path('qr.html')))
-
