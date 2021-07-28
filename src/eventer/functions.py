@@ -1,8 +1,12 @@
 import os
 import pyqrcode # pip install pyqrcode
-import send_email
-import heat_map
+from . import send_email
+from . import heat_map
+from flask_files.app import test_app
 # pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+# app = test_app()
+# app.run(host="localhost", port=5000)
+
 
 student_list = {}
 
@@ -78,3 +82,7 @@ def register_for_event_qr_only(Name, ID, Email, Event_ID):
     qr_code_svg_only_name = QR_gen_code_only(ID, Event_ID)
     # print(qr_code_svg_only_name)
     return qr_code_svg_only_name
+
+def start_flask():
+    app = test_app()
+    app.run(host="localhost", port=5000)

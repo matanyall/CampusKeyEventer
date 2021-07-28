@@ -1,0 +1,1 @@
+Here is where API keys, Tokens, and Credentials should be stored.

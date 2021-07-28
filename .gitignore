@@ -3,7 +3,9 @@
 *secret.html
 *qr.svg
 __pycache__/
-*.json
-*.json_old
-APIkey_DO_NOT_UPLOAD.txt
 *.pyc
+generated_files/*
+!generated_files/.gitkeep
+keys/*
+!keys/KeysInfo.md
+/keys/map_secret.html
