@@ -3,7 +3,7 @@
 
 Campus Key Eventer is an extension to the Campus Key app developed by Nelnet Campus Commerce. Using an integrated web app to display, organize, and register for campus events, Eventer allows you to visualize and pinpoint campus hot spots. 
 
-Campus Key Eventer was created as a hackathon project for the Nelnet Intern Campus Key Hackathon.
+Campus Key Eventer was created as a hackathon project for the Nelnet Intern Campus Key Hackathon. Our team won!
 
 ## Contributors
 | Name | Contribution |
